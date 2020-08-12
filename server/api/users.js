@@ -24,7 +24,6 @@ router.get('/:userId', isAdmin, async (req, res, next) => {
     next(error);
   }
 });
-
 router.delete('/:userId', isAdmin, async (req, res, next) => {
   const userId = +req.params.userId;
   try {
